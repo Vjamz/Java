@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/Project03">
+
+<Resource name="jdbc/musicDB" auth="Container" 
+        maxActive="100" maxIdle="30" maxWait="10000" 
+        username="root" password="sesame" 
+        driverClassName="com.mysql.jdbc.Driver" 
+        url="jdbc:mysql://localhost:3306/music?autoReconnect=true" 
+        logAbandoned="true" removeAbandoned="true" 
+        removeAbandonedTimeout="60" type="javax.sql.DataSource" />
+
+    <Realm className="org.apache.catalina.realm.DataSourceRealm" debug="99"
+        dataSourceName="jdbc/musicDB" localDataSource="true"
+        userTable="UserPass" userNameCol="Username" userCredCol="Password"
+        userRoleTable="UserRole" roleNameCol="Rolename" />
+
+
+
+</Context>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>DisplayProductsServlet</servlet-name>
+        <servlet-class>Controllers.DisplayProductsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DisplayProdServlet</servlet-name>
+        <servlet-class>Controllers.DisplayProdServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateProductServlet</servlet-name>
+        <servlet-class>Controllers.UpdateProductServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteProductServlet</servlet-name>
+        <servlet-class>Controllers.DeleteProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayProductsServlet</servlet-name>
+        <url-pattern>/DisplayProductsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayProdServlet</servlet-name>
+        <url-pattern>/DisplayProdServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateProductServlet</servlet-name>
+        <url-pattern>/UpdateProductServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteProductServlet</servlet-name>
+        <url-pattern>/DeleteProductServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
